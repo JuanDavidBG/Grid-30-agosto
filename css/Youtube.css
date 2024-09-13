@@ -2,12 +2,12 @@
 
 .grid-areas {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 60px 1fr 90px;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr 90px;
+  gap: 10px;
   grid-template-areas:
     "header  header"
-    "sidebar content"
-    "footer  footer";
+    "sidebar content";
 }
 
 .header {
@@ -21,6 +21,10 @@
 }
 
 .content {
-  grid-area: content;
   background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(10, 300px);
+  gap: 10px;
+  grid-area: content;
 }
