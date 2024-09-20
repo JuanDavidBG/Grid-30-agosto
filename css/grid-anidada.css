@@ -1,0 +1,17 @@
+@import url(styles.css);
+
+.grid-anidada {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.sub-grid {
+  display: grid;
+  grid-column: span 3;
+  grid-row: 2/4;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+/* grid diferencia el tamaño de las seldas*/

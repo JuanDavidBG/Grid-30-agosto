@@ -1,0 +1,20 @@
+@import url(styles.css);
+
+.grid-alineamiento {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* justify-items: center;
+  justify-items: end;
+  justify-items: start; */
+  align-items: start;
+  align-items: center; /*Esto sirve para filas*/
+  justify-content: center; /*Esto sirve para tracks */
+}
+
+.item:nth-child(5) {
+  background-color: brown;
+  justify-self: end;
+  color: bisque;
+  align-self: flex-end;
+}

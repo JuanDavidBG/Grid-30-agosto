@@ -1,0 +1,11 @@
+@import url(styles.css);
+
+.grid-maximo-minimo {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    minmax(100px, 200px)
+  ); /*Esto sirve para volver el primero más grande y el segundo mayor */
+  grid-template-columns: repeat(4, minmax(min-content, 300px));
+  grid-template-columns: repeat(4, minmax(300px, min-content));
+}

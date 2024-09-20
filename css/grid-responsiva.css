@@ -1,0 +1,7 @@
+@import url(styles.css);
+
+.grid-responsiva {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /*auto fill rellena el contenedior*/
+}
